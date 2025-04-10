@@ -18,7 +18,7 @@ function Home() {
   return (
     <div className="container">
       <div className="header">
-        <h3>Pharmaceutical Supply Chain Flow :- </h3>
+        <h3>Decentralized Pharmaceutical Supply Chain Flow :- </h3>
       </div>
       <br />
       <div className="register">

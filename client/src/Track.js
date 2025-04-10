@@ -254,75 +254,75 @@ function Track() {
         </article>
         <hr />
         <br />
-        <section className="row">
-          <article className="col-3">
-            <h4>
-              <u>Raw Materials Supplied by:</u>
-            </h4>
-            <p>
-              <b>Supplier ID: </b>
-              {RMS[MED[ID].RMSid].id}
-            </p>
-            <p>
-              <b>Name:</b> {RMS[MED[ID].RMSid].name}
-            </p>
-            <p>
-              <b>Place: </b>
-              {RMS[MED[ID].RMSid].place}
-            </p>
-          </article>
-          <span>&#10132;</span>
-          <article className="col-3">
-            <h4>
-              <u>Manufactured by:</u>
-            </h4>
-            <p>
-              <b>Manufacturer ID: </b>
-              {MAN[MED[ID].MANid].id}
-            </p>
-            <p>
-              <b>Name:</b> {MAN[MED[ID].MANid].name}
-            </p>
-            <p>
-              <b>Place: </b>
-              {MAN[MED[ID].MANid].place}
-            </p>
-          </article>
-          <span>&#10132;</span>
-          <article className="col-3">
-            <h4>
-              <u>Distributed by:</u>
-            </h4>
-            <p>
-              <b>Distributor ID: </b>
-              {DIS[MED[ID].DISid].id}
-            </p>
-            <p>
-              <b>Name:</b> {DIS[MED[ID].DISid].name}
-            </p>
-            <p>
-              <b>Place: </b>
-              {DIS[MED[ID].DISid].place}
-            </p>
-          </article>
-          <span>&#10132;</span>
-          <article className="col-3">
-            <h4>
-              <u>Retailed by:</u>
-            </h4>
-            <p>
-              <b>Retailer ID: </b>
-              {RET[MED[ID].RETid].id}
-            </p>
-            <p>
-              <b>Name:</b> {RET[MED[ID].RETid].name}
-            </p>
-            <p>
-              <b>Place: </b>
-              {RET[MED[ID].RETid].place}
-            </p>
-          </article>
-        </section>
+        <section className="row" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+  <article className="col-3">
+    <h4>
+      <u>Raw Materials Supplied by:</u>
+    </h4>
+    <p>
+      <b>Supplier ID: </b>
+      {RMS[MED[ID].RMSid].id}
+    </p>
+    <p>
+      <b>Name:</b> {RMS[MED[ID].RMSid].name}
+    </p>
+    <p>
+      <b>Place: </b>
+      {RMS[MED[ID].RMSid].place}
+    </p>
+  </article>
+  <span>&#10132;</span>
+  <article className="col-3">
+    <h4>
+      <u>Manufactured by:</u>
+    </h4>
+    <p>
+      <b>Manufacturer ID: </b>
+      {MAN[MED[ID].MANid].id}
+    </p>
+    <p>
+      <b>Name:</b> {MAN[MED[ID].MANid].name}
+    </p>
+    <p>
+      <b>Place: </b>
+      {MAN[MED[ID].MANid].place}
+    </p>
+  </article>
+  <span>&#10132;</span>
+  <article className="col-3">
+    <h4>
+      <u>Distributed by:</u>
+    </h4>
+    <p>
+      <b>Distributor ID: </b>
+      {DIS[MED[ID].DISid].id}
+    </p>
+    <p>
+      <b>Name:</b> {DIS[MED[ID].DISid].name}
+    </p>
+    <p>
+      <b>Place: </b>
+      {DIS[MED[ID].DISid].place}
+    </p>
+  </article>
+  <span>&#10132;</span>
+  <article className="col-3">
+    <h4>
+      <u>Retailed by:</u>
+    </h4>
+    <p>
+      <b>Retailer ID: </b>
+      {RET[MED[ID].RETid].id}
+    </p>
+    <p>
+      <b>Name:</b> {RET[MED[ID].RETid].name}
+    </p>
+    <p>
+      <b>Place: </b>
+      {RET[MED[ID].RETid].place}
+    </p>
+  </article>
+</section>
         <button
           onClick={() => {
             showTrackTillRetail(false);

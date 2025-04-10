@@ -148,6 +148,7 @@ function AssignRoles() {
   const handlerSubmitMAN = async (event) => {
     event.preventDefault();
     try {
+      console.log(MANaddress, MANname, MANplace)
       var reciept = await SupplyChain.methods
         .addManufacturer(MANaddress, MANname, MANplace)
         .send({ from: currentaccount });
@@ -155,6 +156,7 @@ function AssignRoles() {
         loadBlockchaindata();
       }
     } catch (err) {
+      console.dir(err)
       alert("An error occured!!!");
     }
   };
